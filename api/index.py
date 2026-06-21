@@ -4,7 +4,8 @@ import urllib.error
 import json
 from flask import Flask, request, jsonify, render_template
 
-app = Flask(__name__)
+# Configure Flask to find templates and static files in the root folder when deployed inside the api/ directory
+app = Flask(__name__, template_folder='../templates', static_folder='../static')
 
 # Preset Store Locations (User's specific Mitra10 Telukjambe Timur store settings)
 STORES = {
