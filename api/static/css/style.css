@@ -1,31 +1,31 @@
 /* Variables & Premium Dark Palette */
 :root {
-    --bg-base: #0B0F19;
-    --bg-surface: rgba(18, 26, 47, 0.75);
-    --bg-surface-hover: rgba(26, 37, 65, 0.85);
-    --bg-card: rgba(23, 33, 58, 0.5);
+    --bg-base: #0A0F24; /* Deep Navy Blue */
+    --bg-surface: rgba(18, 28, 56, 0.75); /* Translucent Slate-Blue */
+    --bg-surface-hover: rgba(26, 39, 78, 0.85);
+    --bg-card: rgba(22, 32, 64, 0.5);
     
-    --border-color: rgba(255, 255, 255, 0.08);
-    --border-color-hover: rgba(255, 255, 255, 0.15);
-    --border-accent: rgba(99, 102, 241, 0.3);
+    --border-color: rgba(203, 213, 225, 0.1); /* Silver-Slate Border */
+    --border-color-hover: rgba(203, 213, 225, 0.18);
+    --border-accent: rgba(59, 130, 246, 0.35); /* Electric Blue Accent Border */
     
-    --text-primary: #F3F4F6;
-    --text-secondary: #9CA3AF;
-    --text-muted: #6B7280;
+    --text-primary: #F8FAFC; /* Clean White */
+    --text-secondary: #CBD5E1; /* Silver Gray */
+    --text-muted: #94A3B8; /* Muted Slate / Silver */
     
-    --color-primary: #6366F1; /* Indigo */
-    --color-primary-hover: #4F46E5;
-    --color-accent: #06B6D4; /* Cyan */
-    --color-accent-rgb: 6, 182, 212;
-    --color-primary-rgb: 99, 102, 241;
+    --color-primary: #3B82F6; /* Bright Electric Blue */
+    --color-primary-hover: #2563EB; /* Cobalt Blue */
+    --color-accent: #E2E8F0; /* Brushed Silver */
+    --color-accent-rgb: 226, 232, 240;
+    --color-primary-rgb: 59, 130, 246;
     --color-success: #10B981;
     --color-danger: #EF4444;
     
     --font-heading: 'Outfit', 'Inter', sans-serif;
     --font-body: 'Inter', sans-serif;
     
-    --shadow-premium: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
-    --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.25);
+    --shadow-premium: 0 20px 25px -5px rgba(5, 8, 20, 0.5), 0 10px 10px -5px rgba(5, 8, 20, 0.4);
+    --shadow-glow: 0 0 20px rgba(59, 130, 246, 0.3);
     --blur-strength: 16px;
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -191,9 +191,9 @@ body {
 }
 
 .control-card.highlight {
-    background: linear-gradient(180deg, rgba(99, 102, 241, 0.08) 0%, rgba(23, 33, 58, 0.5) 100%);
+    background: linear-gradient(180deg, rgba(59, 130, 246, 0.08) 0%, rgba(22, 32, 64, 0.5) 100%);
     border-color: var(--border-accent);
-    box-shadow: 0 0 15px rgba(99, 102, 241, 0.05);
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.05);
 }
 
 .card-title {
@@ -351,7 +351,7 @@ body {
 }
 
 .search-results-list li:hover {
-    background: rgba(99, 102, 241, 0.15);
+    background: rgba(59, 130, 246, 0.15);
     color: var(--text-primary);
 }
 
@@ -521,8 +521,8 @@ body {
     color: #fff;
 }
 
-.travel-icon.driving { background: rgba(99, 102, 241, 0.15); color: var(--color-primary); }
-.travel-icon.cycling { background: rgba(6, 182, 212, 0.15); color: var(--color-accent); }
+.travel-icon.driving { background: rgba(59, 130, 246, 0.15); color: var(--color-primary); }
+.travel-icon.cycling { background: rgba(148, 163, 184, 0.15); color: var(--text-secondary); }
 .travel-icon.walking { background: rgba(16, 185, 129, 0.15); color: var(--color-success); }
 
 .travel-icon i {
@@ -570,7 +570,7 @@ body {
 }
 
 .history-item:hover {
-    background: rgba(99, 102, 241, 0.1);
+    background: rgba(59, 130, 246, 0.1);
     border-color: var(--border-accent);
 }
 
@@ -640,7 +640,7 @@ body {
 .result-spinner {
     width: 32px;
     height: 32px;
-    border: 3px solid rgba(99, 102, 241, 0.1);
+    border: 3px solid rgba(59, 130, 246, 0.1);
     border-top-color: var(--color-primary);
     border-radius: 50%;
     animation: spin 1s infinite linear;
@@ -696,7 +696,7 @@ body {
     left: 50%;
     top: 50%;
     margin: -18px 0 0 -18px;
-    box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -713,13 +713,13 @@ body {
     width: 36px;
     height: 36px;
     border-radius: 50% 50% 50% 0;
-    background: linear-gradient(135deg, var(--color-accent), #0891b2);
+    background: linear-gradient(135deg, var(--color-accent), #64748b);
     position: absolute;
     transform: rotate(-45deg);
     left: 50%;
     top: 50%;
     margin: -18px 0 0 -18px;
-    box-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+    box-shadow: 0 0 10px rgba(148, 163, 184, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;

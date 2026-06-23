@@ -311,7 +311,7 @@ function drawRouteLine(routeGeometry) {
     if (routeGeometry) {
         routingLine = L.geoJSON(routeGeometry, {
             style: {
-                color: '#6366F1', // Indigo accent
+                color: '#3B82F6', // Blue accent
                 weight: 5,
                 opacity: 0.8
             }
